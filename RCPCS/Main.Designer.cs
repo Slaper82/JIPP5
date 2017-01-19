@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.tcWszystko = new System.Windows.Forms.TabControl();
             this.tpUserData = new System.Windows.Forms.TabPage();
@@ -62,6 +62,10 @@
             this.btnUsun = new System.Windows.Forms.Button();
             this.btnHarmo = new System.Windows.Forms.Button();
             this.dgvHarmonogram = new System.Windows.Forms.DataGridView();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.validFromDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.validToDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unique = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.harmoUserShowBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.rCP = new RCPCS.RCP();
             this.tpRaport = new System.Windows.Forms.TabPage();
@@ -79,6 +83,10 @@
             this.dtpStop = new System.Windows.Forms.DateTimePicker();
             this.dtpStart = new System.Windows.Forms.DateTimePicker();
             this.dgvRaport = new System.Windows.Forms.DataGridView();
+            this.Data = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.oDCZYTANEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Braki = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nadgodziny = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pokazDaneRcpBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.harmoUserShowBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.uprawnieniaListaBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -109,14 +117,6 @@
             this.rcpUserHarmoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.harmoUserShowTableAdapter = new RCPCS.RCPTableAdapters.HarmoUserShowTableAdapter();
             this.pokazDaneRcpTableAdapter = new RCPCS.RCPTableAdapters.PokazDaneRcpTableAdapter();
-            this.Data = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.oDCZYTANEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Braki = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nadgodziny = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.validFromDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.validToDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.unique = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tcWszystko.SuspendLayout();
             this.tpUserData.SuspendLayout();
             this.gbUser.SuspendLayout();
@@ -316,7 +316,7 @@
             this.rdbFemale.Location = new System.Drawing.Point(21, 56);
             this.rdbFemale.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.rdbFemale.Name = "rdbFemale";
-            this.rdbFemale.Size = new System.Drawing.Size(102, 34);
+            this.rdbFemale.Size = new System.Drawing.Size(102, 32);
             this.rdbFemale.TabIndex = 9;
             this.rdbFemale.TabStop = true;
             this.rdbFemale.Text = "Kobieta";
@@ -328,7 +328,7 @@
             this.rdbMale.Location = new System.Drawing.Point(21, 27);
             this.rdbMale.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.rdbMale.Name = "rdbMale";
-            this.rdbMale.Size = new System.Drawing.Size(130, 34);
+            this.rdbMale.Size = new System.Drawing.Size(130, 32);
             this.rdbMale.TabIndex = 8;
             this.rdbMale.TabStop = true;
             this.rdbMale.Text = "Mężczyzna";
@@ -466,20 +466,20 @@
             // 
             this.dgvHarmonogram.AllowUserToAddRows = false;
             this.dgvHarmonogram.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle21.BackColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.RoyalBlue;
-            this.dgvHarmonogram.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.RoyalBlue;
+            this.dgvHarmonogram.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvHarmonogram.AutoGenerateColumns = false;
             this.dgvHarmonogram.BackgroundColor = System.Drawing.Color.White;
             this.dgvHarmonogram.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle22.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle22.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            dataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvHarmonogram.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvHarmonogram.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvHarmonogram.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvHarmonogram.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nameDataGridViewTextBoxColumn,
@@ -495,6 +495,47 @@
             this.dgvHarmonogram.Size = new System.Drawing.Size(549, 341);
             this.dgvHarmonogram.TabIndex = 0;
             this.dgvHarmonogram.SelectionChanged += new System.EventHandler(this.dgvHarmonogram_SelectionChanged);
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Nazwa schematu";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            this.nameDataGridViewTextBoxColumn.Width = 194;
+            // 
+            // validFromDataGridViewTextBoxColumn
+            // 
+            this.validFromDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.validFromDataGridViewTextBoxColumn.DataPropertyName = "ValidFrom";
+            dataGridViewCellStyle3.Format = "d";
+            dataGridViewCellStyle3.NullValue = null;
+            this.validFromDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
+            this.validFromDataGridViewTextBoxColumn.HeaderText = "Początek";
+            this.validFromDataGridViewTextBoxColumn.Name = "validFromDataGridViewTextBoxColumn";
+            this.validFromDataGridViewTextBoxColumn.ReadOnly = true;
+            this.validFromDataGridViewTextBoxColumn.Width = 122;
+            // 
+            // validToDataGridViewTextBoxColumn
+            // 
+            this.validToDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.validToDataGridViewTextBoxColumn.DataPropertyName = "ValidTo";
+            dataGridViewCellStyle4.Format = "d";
+            dataGridViewCellStyle4.NullValue = null;
+            this.validToDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
+            this.validToDataGridViewTextBoxColumn.HeaderText = "Koniec";
+            this.validToDataGridViewTextBoxColumn.Name = "validToDataGridViewTextBoxColumn";
+            this.validToDataGridViewTextBoxColumn.ReadOnly = true;
+            this.validToDataGridViewTextBoxColumn.Width = 102;
+            // 
+            // unique
+            // 
+            this.unique.DataPropertyName = "unique";
+            this.unique.HeaderText = "unique";
+            this.unique.Name = "unique";
+            this.unique.ReadOnly = true;
+            this.unique.Visible = false;
             // 
             // harmoUserShowBindingSource1
             // 
@@ -668,9 +709,9 @@
             // 
             this.dgvRaport.AllowUserToAddRows = false;
             this.dgvRaport.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle25.BackColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.Color.MidnightBlue;
-            this.dgvRaport.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.MidnightBlue;
+            this.dgvRaport.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvRaport.AutoGenerateColumns = false;
             this.dgvRaport.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvRaport.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -688,6 +729,40 @@
             this.dgvRaport.Size = new System.Drawing.Size(891, 673);
             this.dgvRaport.TabIndex = 0;
             this.dgvRaport.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // Data
+            // 
+            this.Data.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Data.DataPropertyName = "DATE";
+            this.Data.HeaderText = "Data";
+            this.Data.Name = "Data";
+            this.Data.ReadOnly = true;
+            this.Data.Width = 82;
+            // 
+            // oDCZYTANEDataGridViewTextBoxColumn
+            // 
+            this.oDCZYTANEDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.oDCZYTANEDataGridViewTextBoxColumn.DataPropertyName = "ODCZYTANE";
+            this.oDCZYTANEDataGridViewTextBoxColumn.HeaderText = "Odczytany czas";
+            this.oDCZYTANEDataGridViewTextBoxColumn.Name = "oDCZYTANEDataGridViewTextBoxColumn";
+            this.oDCZYTANEDataGridViewTextBoxColumn.ReadOnly = true;
+            this.oDCZYTANEDataGridViewTextBoxColumn.Width = 178;
+            // 
+            // Braki
+            // 
+            this.Braki.DataPropertyName = "Braki";
+            this.Braki.HeaderText = "Braki";
+            this.Braki.Name = "Braki";
+            this.Braki.ReadOnly = true;
+            // 
+            // Nadgodziny
+            // 
+            this.Nadgodziny.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Nadgodziny.DataPropertyName = "Nadgodziny";
+            this.Nadgodziny.HeaderText = "Nadgodziny";
+            this.Nadgodziny.Name = "Nadgodziny";
+            this.Nadgodziny.ReadOnly = true;
+            this.Nadgodziny.Width = 150;
             // 
             // pokazDaneRcpBindingSource
             // 
@@ -737,7 +812,7 @@
             this.zarzadzanieToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dodajPracownikaToolStripMenuItem1});
             this.zarzadzanieToolStripMenuItem.Name = "zarzadzanieToolStripMenuItem";
-            this.zarzadzanieToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.zarzadzanieToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
             this.zarzadzanieToolStripMenuItem.Text = "Pracownicy";
             // 
             // dodajPracownikaToolStripMenuItem1
@@ -753,7 +828,7 @@
             this.nowySchematToolStripMenuItem1,
             this.listaSchematowToolStripMenuItem});
             this.schematyToolStripMenuItem1.Name = "schematyToolStripMenuItem1";
-            this.schematyToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
+            this.schematyToolStripMenuItem1.Size = new System.Drawing.Size(158, 26);
             this.schematyToolStripMenuItem1.Text = "Schematy";
             // 
             // nowySchematToolStripMenuItem1
@@ -876,81 +951,6 @@
             // 
             this.pokazDaneRcpTableAdapter.ClearBeforeFill = true;
             // 
-            // Data
-            // 
-            this.Data.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Data.DataPropertyName = "DATE";
-            this.Data.HeaderText = "Data";
-            this.Data.Name = "Data";
-            this.Data.ReadOnly = true;
-            this.Data.Width = 82;
-            // 
-            // oDCZYTANEDataGridViewTextBoxColumn
-            // 
-            this.oDCZYTANEDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.oDCZYTANEDataGridViewTextBoxColumn.DataPropertyName = "ODCZYTANE";
-            this.oDCZYTANEDataGridViewTextBoxColumn.HeaderText = "Odczytany czas";
-            this.oDCZYTANEDataGridViewTextBoxColumn.Name = "oDCZYTANEDataGridViewTextBoxColumn";
-            this.oDCZYTANEDataGridViewTextBoxColumn.ReadOnly = true;
-            this.oDCZYTANEDataGridViewTextBoxColumn.Width = 178;
-            // 
-            // Braki
-            // 
-            this.Braki.DataPropertyName = "Braki";
-            this.Braki.HeaderText = "Braki";
-            this.Braki.Name = "Braki";
-            this.Braki.ReadOnly = true;
-            // 
-            // Nadgodziny
-            // 
-            this.Nadgodziny.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Nadgodziny.DataPropertyName = "Nadgodziny";
-            this.Nadgodziny.HeaderText = "Nadgodziny";
-            this.Nadgodziny.Name = "Nadgodziny";
-            this.Nadgodziny.ReadOnly = true;
-            this.Nadgodziny.Width = 150;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Nazwa schematu";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
-            this.nameDataGridViewTextBoxColumn.Width = 194;
-            // 
-            // validFromDataGridViewTextBoxColumn
-            // 
-            this.validFromDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.validFromDataGridViewTextBoxColumn.DataPropertyName = "ValidFrom";
-            dataGridViewCellStyle23.Format = "d";
-            dataGridViewCellStyle23.NullValue = null;
-            this.validFromDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle23;
-            this.validFromDataGridViewTextBoxColumn.HeaderText = "Początek";
-            this.validFromDataGridViewTextBoxColumn.Name = "validFromDataGridViewTextBoxColumn";
-            this.validFromDataGridViewTextBoxColumn.ReadOnly = true;
-            this.validFromDataGridViewTextBoxColumn.Width = 122;
-            // 
-            // validToDataGridViewTextBoxColumn
-            // 
-            this.validToDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.validToDataGridViewTextBoxColumn.DataPropertyName = "ValidTo";
-            dataGridViewCellStyle24.Format = "d";
-            dataGridViewCellStyle24.NullValue = null;
-            this.validToDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle24;
-            this.validToDataGridViewTextBoxColumn.HeaderText = "Koniec";
-            this.validToDataGridViewTextBoxColumn.Name = "validToDataGridViewTextBoxColumn";
-            this.validToDataGridViewTextBoxColumn.ReadOnly = true;
-            this.validToDataGridViewTextBoxColumn.Width = 102;
-            // 
-            // unique
-            // 
-            this.unique.DataPropertyName = "unique";
-            this.unique.HeaderText = "unique";
-            this.unique.Name = "unique";
-            this.unique.ReadOnly = true;
-            this.unique.Visible = false;
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -966,7 +966,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "Main";
-            this.Text = "Liczenie czasu pracy";
+            this.Text = "Rejestracja czasu pracy";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tcWszystko.ResumeLayout(false);
             this.tpUserData.ResumeLayout(false);

@@ -57,3 +57,6 @@ C:\Users\admin2\Desktop\Projekty VS Omega\RCP\RCPCS\obj\Debug\RCPCS.frmDodPracow
 C:\Users\admin2\Desktop\Projekty VS Omega\RCP\RCPCS\obj\Debug\RCPCS.frmZmiana.resources
 C:\Users\admin2\Desktop\Projekty VS Omega\RCP\RCPCS\obj\Debug\RCPCS.Properties.Resources.resources
 C:\Users\admin2\Desktop\Projekty VS Omega\RCP\RCPCS\obj\Debug\RCPCS.csproj.GenerateResource.Cache
+C:\Users\admin2\Desktop\Repo\JIPP\JIPP5.git\trunk\RCPCS\bin\Debug\RCPCS.exe.config
+C:\Users\admin2\Desktop\Repo\JIPP\JIPP5.git\trunk\RCPCS\obj\Debug\RCPCS.exe
+C:\Users\admin2\Desktop\Repo\JIPP\JIPP5.git\trunk\RCPCS\obj\Debug\RCPCS.pdb
